@@ -1,7 +1,7 @@
 <template>
     <div>
          <div class="card-group">
-        <app-stock v-for="stock in stocks" :key="stock.name"> </app-stock> 
+            <app-stock v-for="stock in stocks" :key="stock.name" :stock="stock"> </app-stock> 
          </div> 
     </div>
 </template>
