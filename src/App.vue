@@ -2,7 +2,7 @@
     <div class="container">
         <app-header></app-header>
         <div class="row">
-            <div class="col-xs-12">
+            <div class="col-12">
                 <router-view/>
             </div>
         </div>
@@ -21,6 +21,9 @@
 </script>
 
 <style lang="scss" >
-
+    body {
+        padding: 30px;
+    }
+        
 </style>
 
