@@ -14,9 +14,9 @@ const mutations = {
 };
 
 const actions = {
-    // buyStocks: ({commit}, order) => {
-    //     commit();
-    // },
+    buyStocks: ({commit}, order) => {
+        commit('BUY_STOCKS', order);
+    },
     initStocks: ({commit}) => {
         commit('SET_STOCKS', stocks);
     },

@@ -1,5 +1,4 @@
-<template>
-    
+<template>    
     <div class="col-sm-4 wrapper">
         <div class="card">
             <div class="card-header bg-transparent border-success text-success">
@@ -42,7 +41,7 @@ export default {
                 stockPrice: this.stock.price,
                 quantity: this.quantity,
             };
-            console.log(order);
+            this.$store.dispatch('buyStocks', order);
             this.quantity = 0;
         }
     }
