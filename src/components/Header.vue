@@ -8,7 +8,7 @@
       </ul>
       <ul class="navbar-nav d-flex justify-content-end">
         <li class="nav-item">
-          <a class="nav-link" href="#">End day</a>
+          <a class="nav-link" href="#" @click="endDay()">End day</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" 
@@ -30,8 +30,18 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+
 export default {
     name: 'appHeader',
+    methods: {
+      ...mapActions([
+        'rndStocks'
+      ]),
+      endDay() {
+        this.rndStocks();
+      }
+    },
     computed: {
         funds(){
             return this.$store.getters.fund
