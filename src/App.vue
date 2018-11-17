@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <app-header></app-header>
-        <div class="row">
+        <div class="row wrapper">
             <div class="col-12">
                 <router-view/>
             </div>
@@ -28,6 +28,11 @@
     body {
         padding: 30px;
     }
+
+    .wrapper {
+        margin-top: 15px;
+    }
+
         
 </style>
 

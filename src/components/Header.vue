@@ -24,6 +24,24 @@
           </div>
         </li>      
       </ul>
+      <strong class="float-right marginFunds">Funds: {{ funds }}</strong>
   </div>
 </nav>
 </template>
+
+<script>
+export default {
+    name: 'header',
+    computed: {
+        funds(){
+            return this.$store.getters.fund
+        }
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+  .marginFunds {
+    margin-left: 10px;
+  }
+</style>
