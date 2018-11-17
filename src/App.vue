@@ -10,11 +10,11 @@
 </template>
 
 <script>
-    import Header from './components/Header.vue'
+    import AppHeader from './components/Header.vue'
 
     export default {
         components: {
-            'app-header': Header,
+            'app-header': AppHeader,
         },
         created() {
             console.log (this.$store.dispatch('initStocks'))

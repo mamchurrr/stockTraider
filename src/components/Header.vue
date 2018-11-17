@@ -31,7 +31,7 @@
 
 <script>
 export default {
-    name: 'header',
+    name: 'appHeader',
     computed: {
         funds(){
             return this.$store.getters.fund
