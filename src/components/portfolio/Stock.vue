@@ -3,7 +3,7 @@
         <div class="card">
             <div class="card-header bg-transparent border-info text-info">
                     {{ stock.name }}
-                    <small>(price: {{stock.price}} | quantity: {{stock.quantity}})</small>
+                    <small>(price: {{stock.price | currency}} | quantity: {{stock.quantity}})</small>
             </div>
             <div class="card-body">
                 <div class="float-left">

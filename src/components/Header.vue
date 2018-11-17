@@ -24,7 +24,7 @@
           </div>
         </li>      
       </ul>
-      <strong class="float-right marginFunds">Funds: {{ funds }}</strong>
+      <strong class="float-right marginFunds">Funds: {{ funds | currency }}</strong>
   </div>
 </nav>
 </template>
